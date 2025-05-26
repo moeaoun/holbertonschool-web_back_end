@@ -1,10 +1,10 @@
-import ClassRoom from './0-classroom';
+import ClassRoom from './0-classroom.js';
 
 export default function initializeRooms() {
-  /* eslint-disable */
-  const class1 = new ClassRoom(19);
-  const class2 = new ClassRoom(20);
-  const class3 = new ClassRoom(34);
-  ClassRoomList.push(class1, class2, class3);
-  return ClassRoomList;
+  return [
+    new ClassRoom(19),
+    new ClassRoom(20),
+    new ClassRoom(34),
+  ];
 }
+
